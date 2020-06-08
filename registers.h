@@ -37,3 +37,23 @@
 #define corrupted_frame_status 0x0104 // [RO-D] corrupted frame status 
 #define mask_corrupted_frames 0x0105 // [RW] mask_corrupted_frames
 #define fast_standby_enabl 0x0106 // [RW] fast standby from streaming
+
+// Output Set-up Registers – [0x0110-0x0147]
+#define CSI_CH_ID 0x0110 // [RW] CSI-2 channel ID
+#define CSI_SIG_MODE 0x0111 // [RO] CSI-2 signalling mode
+#define CSI_LANE_MODE 0x0114 // [RW] CSI_lane_mode 0: Reserved, 1: 2-Lane, 2: Reserved, 3: 4-Lane
+#define TCLK_POST 0x0118 // [RW] Global Timing Parameters 
+#define THS_PREPARE 0x011a // [RW] Global Timing Parameters 
+#define THS_ZERO_MIN 0x011c // [RW] Global Timing Parameters 
+#define THS_TRAIL 0x011e // [RW] Global Timing Parameters 
+#define TCLK_TRAIL_MIN 0x0120 // [RW] Global Timing Parameters 
+#define TCLK_PREPARE 0x0122 // [RW] Global Timing Parameters 
+#define TCLK_ZERO 0x0124 // [RW] Global Timing Parameters 
+#define TLPX 0x0126 // [RW] Global Timing Parameters 
+#define DPHY_CTRL 0x0128 // MIPI Global timing setting 0: auto mode, 1: manual mode
+#define EXCK_FREQ 0x012a // INCK frequency [MHz]
+#define TEMPERATURE 0x0140 // start register to measure sensor temperature 
+#define READOUT_V_CNT 0x0142 // indicates current V-counter value for read-out 
+#define VSYNC_POL 0x0144 // defines polarity of V-sync signal. 0: Lo-active, 1: Hi-active
+#define FLASH_POL 0x0146 // defines polarity of flash strobe signal. 0: Hi-active, 1: Lo-active 
+#define VSYNC_TYPE 0x0147 // Vsync type control 0: Vsync, 1: Reserved
